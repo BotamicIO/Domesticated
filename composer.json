@@ -1,0 +1,13 @@
+{
+    "name": "draperstudio/domesticated",
+    "description": "Convenient helpers for dingo/api",
+    "require": {
+        "php": ">=5.5.9",
+        "shrikeh/teapot": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DraperStudio\\Domesticated\\": "src/"
+        }
+    }
+}
