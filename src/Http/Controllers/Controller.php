@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of Domesticated.
+ *
+ * (c) DraperStudio <hello@draperstudio.tech>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace DraperStudio\Domesticated\Http\Controllers;
 
 use Dingo\Api\Exception\ValidationHttpException;
@@ -11,6 +20,11 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as IlluminateController;
 
+/**
+ * Class Controller.
+ *
+ * @author DraperStudio <hello@draperstudio.tech>
+ */
 abstract class Controller extends IlluminateController
 {
     use AuthenticationTrait;
@@ -19,6 +33,14 @@ abstract class Controller extends IlluminateController
     use TransformerTrait;
     use ValidatesRequests;
 
+    /**
+     * @param Request $request
+     * @param array   $rules
+     * @param array   $messages
+     * @param array   $customAttributes
+     *
+     * @throws ValidationHttpException
+     */
     public function validate(Request $request, array $rules, array $messages = [], array $customAttributes = [])
     {
         $validator = $this->getValidationFactory()->make($request->all(), $rules, $messages, $customAttributes);
@@ -28,6 +50,12 @@ abstract class Controller extends IlluminateController
         }
     }
 
+    /**
+     * @param $response
+     * @param $expectedCode
+     *
+     * @return bool
+     */
     public function hasStatusCode($response, $expectedCode)
     {
         return $response['status_code'] == $expectedCode;
