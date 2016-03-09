@@ -32,9 +32,6 @@ trait ApiRequestTrait
         throw new ValidationHttpException($validator->errors());
     }
 
-    /**
-     *
-     */
     protected function failedAuthorization()
     {
         throw new HttpException(403);
