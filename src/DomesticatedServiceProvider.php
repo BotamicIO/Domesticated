@@ -11,16 +11,15 @@
 
 namespace BrianFaust\Domesticated;
 
-use Illuminate\Support\ServiceProvider as IlluminateProvider;
+use Illuminate\Support\ServiceProvider;
 
-class ServiceProvider extends IlluminateProvider
+class DomesticatedServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
      */
     public function boot()
     {
-        //
     }
 
     /**
@@ -28,6 +27,5 @@ class ServiceProvider extends IlluminateProvider
      */
     public function register()
     {
-        //
     }
 }
