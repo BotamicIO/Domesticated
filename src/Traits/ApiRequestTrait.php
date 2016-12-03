@@ -9,6 +9,8 @@
  * file that was distributed with this source code.
  */
 
+declare(strict_types=1);
+
 namespace BrianFaust\Domesticated\Traits;
 
 use Dingo\Api\Exception\ValidationHttpException;
@@ -22,12 +24,12 @@ trait ApiRequestTrait
      *
      * @throws ValidationHttpException
      */
-    protected function failedValidation(Validator $validator)
+    protected function failedValidation(Validator $validator): void
     {
         throw new ValidationHttpException($validator->errors());
     }
 
-    protected function failedAuthorization()
+    protected function failedAuthorization(): void
     {
         throw new HttpException(403);
     }

@@ -9,6 +9,8 @@
  * file that was distributed with this source code.
  */
 
+declare(strict_types=1);
+
 namespace BrianFaust\Domesticated\Http\Requests;
 
 use BrianFaust\Domesticated\Traits\ApiRequestTrait;
@@ -21,7 +23,7 @@ abstract class ApiRequest extends FormRequest
     /**
      * @return bool
      */
-    public function authorize()
+    public function authorize(): bool
     {
         return true;
     }

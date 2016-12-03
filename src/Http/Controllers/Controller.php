@@ -9,6 +9,8 @@
  * file that was distributed with this source code.
  */
 
+declare(strict_types=1);
+
 namespace BrianFaust\Domesticated\Http\Controllers;
 
 use BrianFaust\Domesticated\Traits\AuthenticationTrait;
@@ -36,7 +38,7 @@ abstract class Controller extends IlluminateController
      *
      * @throws ValidationHttpException
      */
-    public function validate(Request $request, array $rules, array $messages = [], array $customAttributes = [])
+    public function validate(Request $request, array $rules, array $messages = [], array $customAttributes = []): void
     {
         $validator = $this->getValidationFactory()->make($request->all(), $rules, $messages, $customAttributes);
 
@@ -51,7 +53,7 @@ abstract class Controller extends IlluminateController
      *
      * @return bool
      */
-    public function hasStatusCode($response, $expectedCode)
+    public function hasStatusCode($response, $expectedCode): bool
     {
         return $response['status_code'] == $expectedCode;
     }
