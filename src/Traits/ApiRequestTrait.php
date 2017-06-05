@@ -1,8 +1,5 @@
 <?php
 
-
-declare(strict_types=1);
-
 /*
  * This file is part of Domesticated.
  *
@@ -25,12 +22,12 @@ trait ApiRequestTrait
      *
      * @throws ValidationHttpException
      */
-    protected function failedValidation(Validator $validator): void
+    protected function failedValidation(Validator $validator)
     {
         throw new ValidationHttpException($validator->errors());
     }
 
-    protected function failedAuthorization(): void
+    protected function failedAuthorization()
     {
         throw new HttpException(403);
     }

@@ -1,8 +1,5 @@
 <?php
 
-
-declare(strict_types=1);
-
 /*
  * This file is part of Domesticated.
  *
@@ -39,7 +36,7 @@ abstract class Controller extends IlluminateController
      *
      * @throws ValidationHttpException
      */
-    public function validate(Request $request, array $rules, array $messages = [], array $customAttributes = []): void
+    public function validate(Request $request, array $rules, array $messages = [], array $customAttributes = [])
     {
         $validator = $this->getValidationFactory()->make($request->all(), $rules, $messages, $customAttributes);
 

@@ -1,8 +1,5 @@
 <?php
 
-
-declare(strict_types=1);
-
 /*
  * This file is part of Domesticated.
  *
@@ -14,19 +11,6 @@ declare(strict_types=1);
 
 namespace BrianFaust\Tests\Domesticated;
 
-use GrahamCampbell\TestBench\AbstractPackageTestCase;
-
-abstract class AbstractTestCase extends AbstractPackageTestCase
+abstract class AbstractTestCase extends \PHPUnit_Framework_TestCase
 {
-    /**
-     * Get the service provider class.
-     *
-     * @param \Illuminate\Contracts\Foundation\Application $app
-     *
-     * @return string
-     */
-    protected function getServiceProviderClass($app): string
-    {
-        return \BrianFaust\Domesticated\ServiceProvider::class;
-    }
 }
