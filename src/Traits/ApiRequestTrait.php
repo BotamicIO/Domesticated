@@ -11,8 +11,8 @@
 
 namespace BrianFaust\Domesticated\Traits;
 
-use Dingo\Api\Exception\ValidationHttpException;
 use Illuminate\Contracts\Validation\Validator;
+use Dingo\Api\Exception\ValidationHttpException;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 
 trait ApiRequestTrait

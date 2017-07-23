@@ -11,8 +11,8 @@
 
 namespace BrianFaust\Domesticated\Traits\Statuses;
 
-use Dingo\Api\Exception\ValidationHttpException;
 use Teapot\StatusCode;
+use Dingo\Api\Exception\ValidationHttpException;
 
 trait ClientErrorTrait
 {
