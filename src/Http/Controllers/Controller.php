@@ -11,13 +11,13 @@
 
 namespace BrianFaust\Domesticated\Http\Controllers;
 
-use BrianFaust\Domesticated\Traits\AuthenticationTrait;
-use BrianFaust\Domesticated\Traits\StatusTrait;
-use BrianFaust\Domesticated\Traits\TransformerTrait;
-use Dingo\Api\Exception\ValidationHttpException;
-use Dingo\Api\Routing\Helpers as DingoHelpers;
-use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\Request;
+use Dingo\Api\Routing\Helpers as DingoHelpers;
+use BrianFaust\Domesticated\Traits\StatusTrait;
+use Dingo\Api\Exception\ValidationHttpException;
+use BrianFaust\Domesticated\Traits\TransformerTrait;
+use BrianFaust\Domesticated\Traits\AuthenticationTrait;
+use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as IlluminateController;
 
 abstract class Controller extends IlluminateController

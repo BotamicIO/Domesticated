@@ -11,8 +11,8 @@
 
 namespace BrianFaust\Domesticated\Http\Requests;
 
-use BrianFaust\Domesticated\Traits\ApiRequestTrait;
 use Illuminate\Foundation\Http\FormRequest;
+use BrianFaust\Domesticated\Traits\ApiRequestTrait;
 
 abstract class ApiRequest extends FormRequest
 {
