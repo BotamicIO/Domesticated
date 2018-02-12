@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\Domesticated\Traits;
 
-use Illuminate\Contracts\Validation\Validator;
 use Dingo\Api\Exception\ValidationHttpException;
+use Illuminate\Contracts\Validation\Validator;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 
 trait ApiRequestTrait

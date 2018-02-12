@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\Domesticated\Http\Requests;
 
-use Illuminate\Foundation\Http\FormRequest;
 use BrianFaust\Domesticated\Traits\ApiRequestTrait;
+use Illuminate\Foundation\Http\FormRequest;
 
 abstract class ApiRequest extends FormRequest
 {
