@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\Domesticated\Traits\Statuses;
 
-use Teapot\StatusCode;
 use Dingo\Api\Exception\ValidationHttpException;
+use Teapot\StatusCode;
 
 trait ClientErrorTrait
 {

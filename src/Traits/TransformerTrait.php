@@ -14,8 +14,8 @@ declare(strict_types=1);
 namespace BrianFaust\Domesticated\Traits;
 
 use Closure;
-use Illuminate\Support\Collection;
 use Illuminate\Contracts\Pagination\Paginator;
+use Illuminate\Support\Collection;
 
 trait TransformerTrait
 {
