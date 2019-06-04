@@ -1,12 +1,12 @@
 {
-    "name": "faustbrian/domesticated",
+    "name": "artisanry/domesticated",
     "description": "Convenient helpers for dingo/api",
-    "keywords": ["laravel", "framework", "dingo", "Laravel-Domesticated", "Laravel Domesticated", "Brian Faust", "faustbrian"],
+    "keywords": ["laravel", "framework", "dingo", "Laravel-Domesticated", "Laravel Domesticated"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
-        "email": "hello@brianfaust.me",
-        "homepage": "https://brianfaust.me"
+        "email": "hello@basecode.sh",
+        "homepage": "https://basecode.sh"
     }],
     "require": {
         "php": "^7.0",
@@ -19,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BrianFaust\\Domesticated\\": "src/"
+            "Artisanry\\Domesticated\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrianFaust\\Tests\\Domesticated\\": "tests"
+            "Artisanry\\Tests\\Domesticated\\": "tests"
         }
     },
     "config": {
@@ -37,7 +37,7 @@
         },
         "laravel": {
             "providers": [
-                "BrianFaust\\Domesticated\\DomesticatedServiceProvider"
+                "Artisanry\\Domesticated\\DomesticatedServiceProvider"
             ]
         }
     },

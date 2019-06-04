@@ -1,26 +1,26 @@
 # Domesticated
 
-[![Build Status](https://img.shields.io/travis/faustbrian/Domesticated/master.svg?style=flat-square)](https://travis-ci.org/faustbrian/Domesticated)
-[![PHP from Packagist](https://img.shields.io/packagist/php-v/faustbrian/domesticated.svg?style=flat-square)]()
-[![Latest Version](https://img.shields.io/github/release/faustbrian/Domesticated.svg?style=flat-square)](https://github.com/faustbrian/Domesticated/releases)
-[![License](https://img.shields.io/packagist/l/faustbrian/Domesticated.svg?style=flat-square)](https://packagist.org/packages/faustbrian/Domesticated)
+[![Build Status](https://img.shields.io/travis/artisanry/Domesticated/master.svg?style=flat-square)](https://travis-ci.org/artisanry/Domesticated)
+[![PHP from Packagist](https://img.shields.io/packagist/php-v/artisanry/domesticated.svg?style=flat-square)]()
+[![Latest Version](https://img.shields.io/github/release/artisanry/Domesticated.svg?style=flat-square)](https://github.com/artisanry/Domesticated/releases)
+[![License](https://img.shields.io/packagist/l/artisanry/Domesticated.svg?style=flat-square)](https://packagist.org/packages/artisanry/Domesticated)
 
 ## Installation
 
 Require this package, with [Composer](https://getcomposer.org/), in the root directory of your project.
 
-``` bash
-$ composer require faustbrian/domesticated
+```bash
+$ composer require artisanry/domesticated
 ```
 
 ## Usage
 
-``` php
+```php
 <?php
 
 namespace App\Http\Controllers;
 
-use BrianFaust\Domesticated\Http\Controllers\Controller as BaseController;
+use Artisanry\Domesticated\Http\Controllers\Controller as BaseController;
 use Illuminate\Foundation\Bus\DispatchesCommands;
 
 abstract class Controller extends BaseController
@@ -29,7 +29,7 @@ abstract class Controller extends BaseController
 }
 ```
 
-``` php
+```php
 <?php
 
 namespace App\Http\Controllers;
@@ -114,12 +114,12 @@ class PostController extends Controller
 }
 ```
 
-``` php
+```php
 <?php
 
 namespace App\Http\Requests;
 
-use BrianFaust\Domesticated\Http\Requests\ApiRequest;
+use Artisanry\Domesticated\Http\Requests\ApiRequest;
 
 class StorePostRequest extends ApiRequest
 {
@@ -133,19 +133,19 @@ class StorePostRequest extends ApiRequest
 
 ## Testing
 
-``` bash
+```bash
 $ phpunit
 ```
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an e-mail to hello@brianfaust.me. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an e-mail to hello@basecode.sh. All security vulnerabilities will be promptly addressed.
 
 ## Credits
 
-- [Brian Faust](https://github.com/faustbrian)
-- [All Contributors](../../contributors)
+-   [Brian Faust](https://github.com/artisanry)
+-   [All Contributors](../../contributors)
 
 ## License
 
-[MIT](LICENSE) © [Brian Faust](https://brianfaust.me)
+[MIT](LICENSE) © [Brian Faust](https://basecode.sh)

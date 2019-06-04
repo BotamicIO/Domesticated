@@ -5,17 +5,17 @@ declare(strict_types=1);
 /*
  * This file is part of Domesticated.
  *
- * (c) Brian Faust <hello@brianfaust.de>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Domesticated\Http\Controllers;
+namespace Artisanry\Domesticated\Http\Controllers;
 
-use BrianFaust\Domesticated\Traits\AuthenticationTrait;
-use BrianFaust\Domesticated\Traits\StatusTrait;
-use BrianFaust\Domesticated\Traits\TransformerTrait;
+use Artisanry\Domesticated\Traits\AuthenticationTrait;
+use Artisanry\Domesticated\Traits\StatusTrait;
+use Artisanry\Domesticated\Traits\TransformerTrait;
 use Dingo\Api\Exception\ValidationHttpException;
 use Dingo\Api\Routing\Helpers as DingoHelpers;
 use Illuminate\Foundation\Validation\ValidatesRequests;

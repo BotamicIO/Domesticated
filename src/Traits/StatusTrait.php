@@ -5,19 +5,19 @@ declare(strict_types=1);
 /*
  * This file is part of Domesticated.
  *
- * (c) Brian Faust <hello@brianfaust.de>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Domesticated\Traits;
+namespace Artisanry\Domesticated\Traits;
 
-use BrianFaust\Domesticated\Traits\Statuses\ClientErrorTrait;
-use BrianFaust\Domesticated\Traits\Statuses\InformationalTrait;
-use BrianFaust\Domesticated\Traits\Statuses\RedirectionTrait;
-use BrianFaust\Domesticated\Traits\Statuses\ServerErrorTrait;
-use BrianFaust\Domesticated\Traits\Statuses\SuccessTrait;
+use Artisanry\Domesticated\Traits\Statuses\ClientErrorTrait;
+use Artisanry\Domesticated\Traits\Statuses\InformationalTrait;
+use Artisanry\Domesticated\Traits\Statuses\RedirectionTrait;
+use Artisanry\Domesticated\Traits\Statuses\ServerErrorTrait;
+use Artisanry\Domesticated\Traits\Statuses\SuccessTrait;
 use Dingo\Api\Http\Response;
 
 trait StatusTrait
