@@ -1,13 +1,21 @@
 {
     "name": "artisanry/domesticated",
     "description": "Convenient helpers for dingo/api",
-    "keywords": ["laravel", "framework", "dingo", "Laravel-Domesticated", "Laravel Domesticated"],
+    "keywords": [
+        "laravel",
+        "framework",
+        "dingo",
+        "Laravel-Domesticated",
+        "Laravel Domesticated"
+    ],
     "license": "MIT",
-    "authors": [{
-        "name": "Brian Faust",
-        "email": "hello@basecode.sh",
-        "homepage": "https://basecode.sh"
-    }],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "homepage": "https://basecode.sh"
+        }
+    ],
     "require": {
         "php": "^7.0",
         "shrikeh/teapot": "^1.0"
