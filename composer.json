@@ -21,7 +21,7 @@
         "shrikeh/teapot": "^2.3"
     },
     "require-dev": {
-        "graham-campbell/testbench": "^3.3",
+        "graham-campbell/testbench": "^5.2",
         "mockery/mockery": "^0.9.5",
         "phpunit/phpunit": "^6.1"
     },
